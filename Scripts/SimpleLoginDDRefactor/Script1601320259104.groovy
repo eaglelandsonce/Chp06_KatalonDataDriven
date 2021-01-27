@@ -21,7 +21,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
 
-WebUI.click(findTestObject('Page_CURA Healthcare Service/txtMake Appointment'))
+WebUI.click(findTestObject('Page_CURA Healthcare Service/lnkMake Appointment'))
 
 for (def rowNum = 1 ; rowNum <=  findTestData ("Demo_Account").getRowNumbers() ; rowNum++) {
 	WebUI.setText(findTestObject('Page_CURA Healthcare Service/txtUsername_username'), findTestData("Demo_Account").getValue(1, rowNum))
@@ -34,7 +34,7 @@ for (def rowNum = 1 ; rowNum <=  findTestData ("Demo_Account").getRowNumbers() ;
 
 WebUI.click(findTestObject('Page_CURA Healthcare Service/btnLogin'))
 
-WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/h2_Make Appointment'), 5)
+WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/lblMake Appointment'), 5)
 
 WebUI.closeBrowser()
 

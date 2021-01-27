@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtMake Appointment</name>
+   <name>lnkMake Appointment</name>
    <tag></tag>
    <elementGuidId>18bb8018-e25e-42ad-949e-b316463573b2</elementGuidId>
    <selectorCollection>
