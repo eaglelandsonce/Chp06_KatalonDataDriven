@@ -21,18 +21,18 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
 
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Make Appointment'))
+WebUI.click(findTestObject('Page_CURA Healthcare Service/txtMake Appointment'))
 
 for (def rowNum = 1 ; rowNum <=  findTestData ("Demo_Account").getRowNumbers() ; rowNum++) {
-	WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Username_username'), findTestData("Demo_Account").getValue(1, rowNum))
+	WebUI.setText(findTestObject('Page_CURA Healthcare Service/txtUsername_username'), findTestData("Demo_Account").getValue(1, rowNum))
 	
-	WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Password_password'), findTestData("Demo_Account").getValue(2, rowNum))
+	WebUI.setText(findTestObject('Page_CURA Healthcare Service/txtPassword_password'), findTestData("Demo_Account").getValue(2, rowNum))
 	
 	Thread.sleep(3000)
 	
 	}
 
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'))
+WebUI.click(findTestObject('Page_CURA Healthcare Service/btnLogin'))
 
 WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/h2_Make Appointment'), 5)
 
